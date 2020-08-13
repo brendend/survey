@@ -1,0 +1,91 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE html>
+
+    <head>
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div id="container">
+        <div>
+            <h1 id="title">Survey From</h1>
+            <p id="description">Thank you for taking the time to improve my platform</p>
+
+            <form id="survey-form">
+                <div>
+                    <label id="name-label" for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Ex. John" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="email-label" for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Ex. Doe" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="number-label" for="age">Age (optional)</label><br>
+                    <input type="number" id="number" name="age" placeholder="10" value="10" min="10" max="120">
+                </div>
+
+                <br>
+
+                <div>
+                    <label id="dropdown-label" for="question1">What is your favourite feature on this platform?</label><br>
+                    <select id="dropdown" name="question1">
+                        <option selected disabled>Choose here</option>
+                        <option value="challenges">Challenges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">community</option>
+                        <option value="code-review">Code Review</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="recommend">Would you recommend this platform to someone else?</label><br>
+                    <input type="radio" id="yes" name="recommend" value="yes" checked>
+                    <label for="yes">Yes</label><br>
+                    <input type="radio" id="no" name="recommend" value="no">
+                    <label for="no">No</label><br>
+                    <input type="radio" id="idk" name="recommend" value="idk">
+                    <label for="idk">I Don't Know</label>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="impovements">What would you like to see improved?</label><br>
+                    <input type="checkbox" id="question1" name="question1" value="Front">
+                    <label for="question1">Front End</label><br>
+                    <input type="checkbox" id="question2" name="question2" value="Back">
+                    <label for="question1">Back End</label><br>
+                    <input type="checkbox" id="question3" name="question3" value="Community">
+                    <label for="question1">Community</label><br>
+                    <input type="checkbox" id="question4" name="question4" value="Wiki">
+                    <label for="question1">Wiki</label><br>
+                    <input type="checkbox" id="question5" name="question5" value="Forum">
+                    <label for="question1">Forum</label><br>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="comments">Any comments or suggestions?</label><br>
+                    <textarea id="text-area">Enter your comment here...</textarea>
+                </div>
+
+                <br>
+
+                <input id="submit" type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
